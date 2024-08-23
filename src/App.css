@@ -1,0 +1,45 @@
+/* Container styling */
+.container {
+  padding: 20px;
+}
+
+/* Breadcrumb navigation styling */
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  width: 25%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-item {
+  margin-right: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  margin-right: 10px;
+  color: #6c757d;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item span {
+  color: #495057;
+  font-weight: bold;
+}
+
+.breadcrumb-item span:last-child {
+  color: #007bff; /* Optional: To highlight the last breadcrumb */
+}
